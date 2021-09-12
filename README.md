@@ -21,6 +21,6 @@ $ docker-compose logs
 $ docker-compose exec web /bin/bash   
 
 # 参考  
-・[Docker超入門講座 合併版 | ゼロから実践する4時間のフルコース](https://www.youtube.com/watch?v=lZD1MIHwMBY&t=22s)
-・[Docker + Rails で Bundler v2.X を使う](https://qiita.com/tanakaworld/items/468d421eca58576006fb)　　
-・[Docker docker-compose up時、You must use Bundler 2 or greater with this lockfile.　という地獄のエラー](https://qiita.com/avicii2314/items/769aacd3b5b949dcbcb8)　　
+・[Docker超入門講座 合併版 | ゼロから実践する4時間のフルコース](https://www.youtube.com/watch?v=lZD1MIHwMBY&t=22s)  
+・[Docker + Rails で Bundler v2.X を使う](https://qiita.com/tanakaworld/items/468d421eca58576006fb)  
+・[Docker docker-compose up時、You must use Bundler 2 or greater with this lockfile.　という地獄のエラー](https://qiita.com/avicii2314/items/769aacd3b5b949dcbcb8)  
