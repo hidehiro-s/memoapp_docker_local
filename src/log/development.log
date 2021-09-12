@@ -1,0 +1,1391 @@
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ bin/rails:9
+  [1m[35m (1.9ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  ↳ bin/rails:9
+  [1m[35m (1.2ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Create (0.2ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2020-12-02 10:36:08.898127"], ["updated_at", "2020-12-02 10:36:08.898127"]]
+  ↳ bin/rails:9
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Started GET "/" for ::1 at 2020-12-02 19:36:37 +0900
+Processing by MemosController#index as HTML
+  Rendering memos/index.html.erb within layouts/application
+  Rendered memos/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 433ms (Views: 428.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/new" for ::1 at 2020-12-02 19:37:10 +0900
+Processing by MemosController#new as HTML
+  Rendering memos/new.html.erb within layouts/application
+  Rendered memos/new.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 16ms (Views: 14.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-12-02 19:50:42 +0900
+Processing by MemosController#index as HTML
+  Rendering memos/index.html.erb within layouts/application
+  Rendered memos/index.html.erb within layouts/application (0.7ms)
+Started GET "/" for ::1 at 2020-12-02 19:50:45 +0900
+Processing by MemosController#index as HTML
+  Rendering memos/index.html.erb within layouts/application
+  Rendered memos/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 3838ms (Views: 3833.3ms | ActiveRecord: 0.0ms)
+
+
+Completed 200 OK in 1675ms (Views: 1673.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/new" for ::1 at 2020-12-02 19:53:09 +0900
+Processing by MemosController#new as HTML
+  Rendering memos/new.html.erb within layouts/application
+  Rendered memos/new.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 50ms (Views: 47.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/new" for ::1 at 2020-12-02 19:54:08 +0900
+Processing by MemosController#new as HTML
+  Rendering memos/new.html.erb within layouts/application
+  Rendered memos/new.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 223ms (Views: 218.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-12-02 19:54:13 +0900
+Processing by MemosController#index as HTML
+  Rendering memos/index.html.erb within layouts/application
+  Rendered memos/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 40ms (Views: 37.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/new" for ::1 at 2020-12-02 19:54:15 +0900
+Processing by MemosController#new as HTML
+  Rendering memos/new.html.erb within layouts/application
+  Rendered memos/new.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 44ms (Views: 41.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-12-02 19:54:20 +0900
+Processing by MemosController#index as HTML
+  Rendering memos/index.html.erb within layouts/application
+  Rendered memos/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 51ms (Views: 49.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-12-02 20:00:07 +0900
+Processing by MemosController#index as HTML
+  Rendering memos/index.html.erb within layouts/application
+  Rendered memos/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 223ms (Views: 218.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-12-02 20:00:11 +0900
+Processing by MemosController#index as HTML
+  Rendering memos/index.html.erb within layouts/application
+  Rendered memos/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 38ms (Views: 36.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/new" for ::1 at 2020-12-02 20:00:15 +0900
+Processing by MemosController#new as HTML
+  Rendering memos/new.html.erb within layouts/application
+  Rendered memos/new.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 44ms (Views: 41.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/create" for ::1 at 2020-12-02 20:04:09 +0900
+Processing by MemosController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"pAJUdiNXPzLdRrAANjLtQEadbnjznr1j1GgWjpng4WNW3dJb0dvAYpSdOONJLwmDM8zAXBnZidPjBO9h4ldwlg==", "memos"=>{"title"=>"記事更新", "body"=>"1記事"}, "commit"=>"Create"}
+  Rendering text template
+  Rendered text template (0.0ms)
+Completed 200 OK in 7ms (Views: 3.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/new" for ::1 at 2020-12-02 20:07:37 +0900
+Processing by MemosController#new as HTML
+  Rendering memos/new.html.erb within layouts/application
+  Rendered memos/new.html.erb within layouts/application (11.0ms)
+Completed 200 OK in 223ms (Views: 221.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/new" for ::1 at 2020-12-02 20:09:53 +0900
+Processing by MemosController#new as HTML
+  Rendering memos/new.html.erb within layouts/application
+  Rendered memos/new.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 57ms (Views: 54.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/new" for ::1 at 2020-12-02 20:11:58 +0900
+Processing by MemosController#new as HTML
+  Rendering memos/new.html.erb within layouts/application
+  Rendered memos/new.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 45ms (Views: 42.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/new" for ::1 at 2020-12-02 20:12:00 +0900
+Processing by MemosController#new as HTML
+  Rendering memos/new.html.erb within layouts/application
+  Rendered memos/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 64ms (Views: 62.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/new" for ::1 at 2020-12-02 20:12:23 +0900
+Processing by MemosController#new as HTML
+  Rendering memos/new.html.erb within layouts/application
+  Rendered memos/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 58ms (Views: 55.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/new" for ::1 at 2020-12-02 20:18:48 +0900
+Processing by MemosController#new as HTML
+  Rendering memos/new.html.erb within layouts/application
+  Rendered memos/new.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 51ms (Views: 48.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/new" for ::1 at 2020-12-02 20:19:59 +0900
+Processing by MemosController#new as HTML
+  Rendering memos/new.html.erb within layouts/application
+  Rendered memos/new.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 43ms (Views: 41.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/new" for ::1 at 2020-12-02 20:24:07 +0900
+Processing by MemosController#new as HTML
+  Rendering memos/new.html.erb within layouts/application
+  Rendered memos/new.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 47ms (Views: 44.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/new" for ::1 at 2020-12-02 20:25:54 +0900
+Processing by MemosController#new as HTML
+  Rendering memos/new.html.erb within layouts/application
+  Rendered memos/new.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 41ms (Views: 39.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-12-02 20:27:10 +0900
+Processing by MemosController#index as HTML
+  Rendering memos/index.html.erb within layouts/application
+  Rendered memos/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 39ms (Views: 37.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-12-02 20:27:57 +0900
+Processing by MemosController#index as HTML
+  Rendering memos/index.html.erb within layouts/application
+  Rendered memos/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 44ms (Views: 42.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/new" for ::1 at 2020-12-02 20:28:03 +0900
+Processing by MemosController#new as HTML
+  Rendering memos/new.html.erb within layouts/application
+  Rendered memos/new.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 43ms (Views: 41.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/new" for ::1 at 2020-12-02 20:28:34 +0900
+Processing by MemosController#new as HTML
+  Rendering memos/new.html.erb within layouts/application
+  Rendered memos/new.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 44ms (Views: 41.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-12-02 20:28:39 +0900
+Processing by MemosController#index as HTML
+  Rendering memos/index.html.erb within layouts/application
+  Rendered memos/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 43ms (Views: 41.5ms | ActiveRecord: 0.0ms)
+
+
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreateMemos (20201202113051)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ db/migrate/20201202113051_create_memos.rb:3
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "memos" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "body" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20201202113051_create_memos.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20201202113051"]]
+  ↳ bin/rails:9
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Started GET "/" for ::1 at 2020-12-02 20:37:34 +0900
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/hs/.rbenv/versions/2.5.8/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+Processing by MemosController#index as HTML
+  Rendering memos/index.html.erb within layouts/application
+  Rendered memos/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 236ms (Views: 232.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-12-02 20:37:37 +0900
+Processing by MemosController#index as HTML
+  Rendering memos/index.html.erb within layouts/application
+  Rendered memos/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 37ms (Views: 35.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/new" for ::1 at 2020-12-02 20:37:37 +0900
+Processing by MemosController#new as HTML
+  Rendering memos/new.html.erb within layouts/application
+  Rendered memos/new.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 43ms (Views: 40.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/create" for ::1 at 2020-12-02 20:37:42 +0900
+Processing by MemosController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"HHaoIDYxWskfJWMQ+kTUwbuMpoLK71GZucSjBHME60buqS4NxL2lmVb+6/OFWTACzt0IpiCoZSmOqFrrCLN6sw==", "memos"=>{"title"=>"記事更新", "body"=>"1記事"}, "commit"=>"Create"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/application_controller.rb:12
+  [1m[36mMemo Create (0.4ms)[0m  [1m[32mINSERT INTO "memos" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "記事更新"], ["body", "1記事"], ["created_at", "2020-12-02 11:37:42.768568"], ["updated_at", "2020-12-02 11:37:42.768568"]]
+  ↳ app/controllers/application_controller.rb:12
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/application_controller.rb:12
+Redirected to http://localhost:3000/
+Completed 302 Found in 17ms (ActiveRecord: 1.6ms)
+
+
+Started GET "/" for ::1 at 2020-12-02 20:37:42 +0900
+Processing by MemosController#index as HTML
+  Rendering memos/index.html.erb within layouts/application
+  Rendered memos/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 40ms (Views: 38.3ms | ActiveRecord: 0.0ms)
+
+
+  [1m[36mMemo Load (0.6ms)[0m  [1m[34mSELECT  "memos".* FROM "memos" LIMIT ?[0m  [["LIMIT", 11]]
+Started GET "/" for ::1 at 2020-12-02 20:43:45 +0900
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/hs/.rbenv/versions/2.5.8/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+Processing by MemosController#index as HTML
+  Rendering memos/index.html.erb within layouts/application
+  Rendered memos/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 223ms (Views: 218.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/new" for ::1 at 2020-12-02 20:43:48 +0900
+Processing by MemosController#new as HTML
+  Rendering memos/new.html.erb within layouts/application
+  Rendered memos/new.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 42ms (Views: 40.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/new" for ::1 at 2020-12-02 20:44:14 +0900
+Processing by MemosController#new as HTML
+  Rendering memos/new.html.erb within layouts/application
+  Rendered memos/new.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 40ms (Views: 37.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-12-02 20:44:32 +0900
+Processing by MemosController#index as HTML
+  Rendering memos/index.html.erb within layouts/application
+  Rendered memos/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 46ms (Views: 44.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/new" for ::1 at 2020-12-02 20:44:33 +0900
+Processing by MemosController#new as HTML
+  Rendering memos/new.html.erb within layouts/application
+  Rendered memos/new.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 38ms (Views: 36.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/new" for ::1 at 2020-12-02 20:45:28 +0900
+Processing by MemosController#new as HTML
+  Rendering memos/new.html.erb within layouts/application
+  Rendered memos/new.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 39ms (Views: 37.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/new" for ::1 at 2020-12-02 20:45:31 +0900
+Processing by MemosController#new as HTML
+  Rendering memos/new.html.erb within layouts/application
+  Rendered memos/new.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 41ms (Views: 38.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-12-02 20:45:35 +0900
+Processing by MemosController#index as HTML
+  Rendering memos/index.html.erb within layouts/application
+  Rendered memos/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 42ms (Views: 40.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/new" for ::1 at 2020-12-02 20:45:50 +0900
+Processing by MemosController#new as HTML
+  Rendering memos/new.html.erb within layouts/application
+  Rendered memos/new.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 42ms (Views: 40.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/new" for ::1 at 2020-12-02 20:47:41 +0900
+Processing by MemosController#new as HTML
+  Rendering memos/new.html.erb within layouts/application
+  Rendered memos/new.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 39ms (Views: 37.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-12-02 20:47:45 +0900
+Processing by MemosController#index as HTML
+Completed 500 Internal Server Error in 121ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (undefined local variable or method `memo' for #<MemosController:0x00007f996f81c3f0>):
+  
+app/controllers/application_controller.rb:4:in `index'
+Started GET "/" for ::1 at 2020-12-02 20:48:26 +0900
+Processing by MemosController#index as HTML
+  Rendering memos/index.html.erb within layouts/application
+  Rendered memos/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 45ms (Views: 42.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-12-02 20:53:04 +0900
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/hs/.rbenv/versions/2.5.8/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+Processing by MemosController#index as HTML
+  Rendering memos/index.html.erb within layouts/application
+  [1m[36mMemo Load (0.1ms)[0m  [1m[34mSELECT "memos".* FROM "memos"[0m
+  ↳ app/views/memos/index.html.erb:5
+  Rendered memos/index.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 221ms (Views: 215.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for ::1 at 2020-12-02 20:53:08 +0900
+Processing by MemosController#index as HTML
+  Rendering memos/index.html.erb within layouts/application
+  [1m[36mMemo Load (0.1ms)[0m  [1m[34mSELECT "memos".* FROM "memos"[0m
+  ↳ app/views/memos/index.html.erb:5
+  Rendered memos/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 56ms (Views: 53.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/new" for ::1 at 2020-12-02 20:53:10 +0900
+Processing by MemosController#new as HTML
+  Rendering memos/new.html.erb within layouts/application
+  Rendered memos/new.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 57ms (Views: 55.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-12-02 20:53:14 +0900
+Processing by MemosController#index as HTML
+  Rendering memos/index.html.erb within layouts/application
+  [1m[36mMemo Load (0.1ms)[0m  [1m[34mSELECT "memos".* FROM "memos"[0m
+  ↳ app/views/memos/index.html.erb:5
+  Rendered memos/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 52ms (Views: 50.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for ::1 at 2020-12-02 20:53:24 +0900
+Processing by MemosController#index as HTML
+  Rendering memos/index.html.erb within layouts/application
+  [1m[36mMemo Load (0.1ms)[0m  [1m[34mSELECT "memos".* FROM "memos"[0m
+  ↳ app/views/memos/index.html.erb:7
+  Rendered memos/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 48ms (Views: 46.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for ::1 at 2020-12-02 20:54:05 +0900
+Processing by MemosController#index as HTML
+  Rendering memos/index.html.erb within layouts/application
+  [1m[36mMemo Load (0.1ms)[0m  [1m[34mSELECT "memos".* FROM "memos"[0m
+  ↳ app/views/memos/index.html.erb:7
+  Rendered memos/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 39ms (Views: 37.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for ::1 at 2020-12-02 20:54:25 +0900
+Processing by MemosController#index as HTML
+  Rendering memos/index.html.erb within layouts/application
+  [1m[36mMemo Load (0.1ms)[0m  [1m[34mSELECT "memos".* FROM "memos"[0m
+  ↳ app/views/memos/index.html.erb:7
+  Rendered memos/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 44ms (Views: 42.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for ::1 at 2020-12-02 20:55:29 +0900
+Processing by MemosController#index as HTML
+  Rendering memos/index.html.erb within layouts/application
+  [1m[36mMemo Load (0.1ms)[0m  [1m[34mSELECT "memos".* FROM "memos"[0m
+  ↳ app/views/memos/index.html.erb:7
+  Rendered memos/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 40ms (Views: 37.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for ::1 at 2020-12-02 20:59:42 +0900
+Processing by MemosController#index as HTML
+  Rendering memos/index.html.erb within layouts/application
+  [1m[36mMemo Load (0.1ms)[0m  [1m[34mSELECT "memos".* FROM "memos"[0m
+  ↳ app/views/memos/index.html.erb:6
+  Rendered memos/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 42ms (Views: 39.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for ::1 at 2020-12-02 21:01:59 +0900
+Processing by MemosController#index as HTML
+  Rendering memos/index.html.erb within layouts/application
+  [1m[36mMemo Load (0.1ms)[0m  [1m[34mSELECT "memos".* FROM "memos"[0m
+  ↳ app/views/memos/index.html.erb:7
+  Rendered memos/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 47ms (Views: 44.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for ::1 at 2020-12-02 21:03:17 +0900
+Processing by MemosController#index as HTML
+  Rendering memos/index.html.erb within layouts/application
+  [1m[36mMemo Load (0.1ms)[0m  [1m[34mSELECT "memos".* FROM "memos"[0m
+  ↳ app/views/memos/index.html.erb:7
+  Rendered memos/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 39ms (Views: 37.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for ::1 at 2020-12-02 21:03:18 +0900
+Processing by MemosController#index as HTML
+  Rendering memos/index.html.erb within layouts/application
+  [1m[36mMemo Load (0.1ms)[0m  [1m[34mSELECT "memos".* FROM "memos"[0m
+  ↳ app/views/memos/index.html.erb:7
+  Rendered memos/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 44ms (Views: 41.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for ::1 at 2020-12-02 21:03:45 +0900
+Processing by MemosController#index as HTML
+  Rendering memos/index.html.erb within layouts/application
+  [1m[36mMemo Load (0.1ms)[0m  [1m[34mSELECT "memos".* FROM "memos"[0m
+  ↳ app/views/memos/index.html.erb:7
+  Rendered memos/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 42ms (Views: 40.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/new" for ::1 at 2020-12-02 21:03:48 +0900
+Processing by MemosController#new as HTML
+  Rendering memos/new.html.erb within layouts/application
+  Rendered memos/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 42ms (Views: 39.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-12-02 21:03:54 +0900
+Processing by MemosController#index as HTML
+  Rendering memos/index.html.erb within layouts/application
+  [1m[36mMemo Load (0.1ms)[0m  [1m[34mSELECT "memos".* FROM "memos"[0m
+  ↳ app/views/memos/index.html.erb:7
+  Rendered memos/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 45ms (Views: 42.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for ::1 at 2020-12-02 21:06:23 +0900
+Processing by MemosController#index as HTML
+  Rendering memos/index.html.erb within layouts/application
+  [1m[36mMemo Load (0.1ms)[0m  [1m[34mSELECT "memos".* FROM "memos"[0m
+  ↳ app/views/memos/index.html.erb:7
+  Rendered memos/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 40ms (Views: 38.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for ::1 at 2020-12-02 21:07:19 +0900
+Processing by MemosController#index as HTML
+  Rendering memos/index.html.erb within layouts/application
+  [1m[36mMemo Load (0.1ms)[0m  [1m[34mSELECT "memos".* FROM "memos"[0m
+  ↳ app/views/memos/index.html.erb:7
+  Rendered memos/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 39ms (Views: 37.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for ::1 at 2020-12-02 21:07:30 +0900
+Processing by MemosController#index as HTML
+  Rendering memos/index.html.erb within layouts/application
+  [1m[36mMemo Load (0.1ms)[0m  [1m[34mSELECT "memos".* FROM "memos"[0m
+  ↳ app/views/memos/index.html.erb:7
+  Rendered memos/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 44ms (Views: 42.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/new" for ::1 at 2020-12-02 21:07:56 +0900
+Processing by MemosController#new as HTML
+  Rendering memos/new.html.erb within layouts/application
+  Rendered memos/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 42ms (Views: 40.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/create" for ::1 at 2020-12-02 21:08:28 +0900
+Processing by MemosController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/2779WQ038/ta2wdQqc3fHG3WTak8TAfgG9+OKHB3I4NsX3Ylrggn6Sw5P49utO/BOb3Ek62BK+3A4fX2nZNew==", "memos"=>{"title"=>"AWS学習", "body"=>"ClaudFormationの見直し"}, "commit"=>"Create"}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/application_controller.rb:13
+  [1m[36mMemo Create (0.4ms)[0m  [1m[32mINSERT INTO "memos" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "AWS学習"], ["body", "ClaudFormationの見直し"], ["created_at", "2020-12-02 12:08:28.239594"], ["updated_at", "2020-12-02 12:08:28.239594"]]
+  ↳ app/controllers/application_controller.rb:13
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/application_controller.rb:13
+Redirected to http://localhost:3000/
+Completed 302 Found in 3ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/" for ::1 at 2020-12-02 21:08:28 +0900
+Processing by MemosController#index as HTML
+  Rendering memos/index.html.erb within layouts/application
+  [1m[36mMemo Load (0.1ms)[0m  [1m[34mSELECT "memos".* FROM "memos"[0m
+  ↳ app/views/memos/index.html.erb:7
+  Rendered memos/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 45ms (Views: 42.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for ::1 at 2020-12-02 21:16:54 +0900
+Processing by MemosController#index as HTML
+  Rendering memos/index.html.erb within layouts/application
+  [1m[36mMemo Load (0.2ms)[0m  [1m[34mSELECT "memos".* FROM "memos"[0m
+  ↳ app/views/memos/index.html.erb:7
+  Rendered memos/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 39ms (Views: 36.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2020-12-02 21:27:26 +0900
+Processing by MemosController#index as HTML
+  Rendering memos/index.html.erb within layouts/application
+  [1m[36mMemo Load (0.2ms)[0m  [1m[34mSELECT "memos".* FROM "memos"[0m
+  ↳ app/views/memos/index.html.erb:62
+  Rendered memos/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 43ms (Views: 40.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2020-12-02 21:29:14 +0900
+Processing by MemosController#index as HTML
+  Rendering memos/index.html.erb within layouts/application
+  [1m[36mMemo Load (0.1ms)[0m  [1m[34mSELECT "memos".* FROM "memos"[0m
+  ↳ app/views/memos/index.html.erb:62
+  Rendered memos/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 47ms (Views: 44.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for ::1 at 2020-12-02 21:30:26 +0900
+Processing by MemosController#index as HTML
+  Rendering memos/index.html.erb within layouts/application
+  [1m[36mMemo Load (0.1ms)[0m  [1m[34mSELECT "memos".* FROM "memos"[0m
+  ↳ app/views/memos/index.html.erb:47
+  Rendered memos/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 40ms (Views: 37.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for ::1 at 2020-12-02 21:31:25 +0900
+Processing by MemosController#index as HTML
+  Rendering memos/index.html.erb within layouts/application
+  [1m[36mMemo Load (0.1ms)[0m  [1m[34mSELECT "memos".* FROM "memos"[0m
+  ↳ app/views/memos/index.html.erb:41
+  Rendered memos/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 47ms (Views: 44.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for ::1 at 2020-12-02 21:33:09 +0900
+Processing by MemosController#index as HTML
+  Rendering memos/index.html.erb within layouts/application
+  [1m[36mMemo Load (0.1ms)[0m  [1m[34mSELECT "memos".* FROM "memos"[0m
+  ↳ app/views/memos/index.html.erb:41
+  Rendered memos/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 42ms (Views: 39.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/new" for ::1 at 2020-12-02 21:33:10 +0900
+Processing by MemosController#new as HTML
+  Rendering memos/new.html.erb within layouts/application
+  Rendered memos/new.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 43ms (Views: 41.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-12-02 21:33:32 +0900
+Processing by MemosController#index as HTML
+  Rendering memos/index.html.erb within layouts/application
+  [1m[36mMemo Load (0.1ms)[0m  [1m[34mSELECT "memos".* FROM "memos"[0m
+  ↳ app/views/memos/index.html.erb:41
+  Rendered memos/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 43ms (Views: 41.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for ::1 at 2020-12-02 21:39:14 +0900
+Processing by MemosController#index as HTML
+  Rendering memos/index.html.erb within layouts/application
+  [1m[36mMemo Load (0.1ms)[0m  [1m[34mSELECT "memos".* FROM "memos"[0m
+  ↳ app/views/memos/index.html.erb:47
+  Rendered memos/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 41ms (Views: 39.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for ::1 at 2020-12-02 21:39:45 +0900
+Processing by MemosController#index as HTML
+  Rendering memos/index.html.erb within layouts/application
+  [1m[36mMemo Load (0.1ms)[0m  [1m[34mSELECT "memos".* FROM "memos"[0m
+  ↳ app/views/memos/index.html.erb:45
+  Rendered memos/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 44ms (Views: 42.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for ::1 at 2020-12-02 21:41:17 +0900
+Processing by MemosController#index as HTML
+  Rendering memos/index.html.erb within layouts/application
+  [1m[36mMemo Load (0.1ms)[0m  [1m[34mSELECT "memos".* FROM "memos"[0m
+  ↳ app/views/memos/index.html.erb:45
+  Rendered memos/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 40ms (Views: 38.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for ::1 at 2020-12-02 21:43:55 +0900
+Processing by MemosController#index as HTML
+  Rendering memos/index.html.erb within layouts/application
+  [1m[36mMemo Load (0.1ms)[0m  [1m[34mSELECT "memos".* FROM "memos"[0m
+  ↳ app/views/memos/index.html.erb:47
+  Rendered memos/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 47ms (Views: 44.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/new" for ::1 at 2020-12-02 21:44:30 +0900
+Processing by MemosController#new as HTML
+  Rendering memos/new.html.erb within layouts/application
+  Rendered memos/new.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 41ms (Views: 38.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-12-02 21:44:42 +0900
+Processing by MemosController#index as HTML
+  Rendering memos/index.html.erb within layouts/application
+  [1m[36mMemo Load (0.1ms)[0m  [1m[34mSELECT "memos".* FROM "memos"[0m
+  ↳ app/views/memos/index.html.erb:47
+  Rendered memos/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 40ms (Views: 38.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for ::1 at 2020-12-02 21:45:11 +0900
+Processing by MemosController#index as HTML
+  Rendering memos/index.html.erb within layouts/application
+  [1m[36mMemo Load (0.1ms)[0m  [1m[34mSELECT "memos".* FROM "memos"[0m
+  ↳ app/views/memos/index.html.erb:45
+  Rendered memos/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 45ms (Views: 43.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for ::1 at 2020-12-02 21:47:02 +0900
+Processing by MemosController#index as HTML
+  Rendering memos/index.html.erb within layouts/application
+  [1m[36mMemo Load (0.1ms)[0m  [1m[34mSELECT "memos".* FROM "memos"[0m
+  ↳ app/views/memos/index.html.erb:45
+  Rendered memos/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 40ms (Views: 38.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/new" for ::1 at 2020-12-02 21:47:03 +0900
+Processing by MemosController#new as HTML
+  Rendering memos/new.html.erb within layouts/application
+  Rendered memos/new.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 49ms (Views: 46.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-12-02 21:47:12 +0900
+Processing by MemosController#index as HTML
+  Rendering memos/index.html.erb within layouts/application
+  [1m[36mMemo Load (0.1ms)[0m  [1m[34mSELECT "memos".* FROM "memos"[0m
+  ↳ app/views/memos/index.html.erb:45
+  Rendered memos/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 40ms (Views: 38.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for ::1 at 2020-12-02 21:49:30 +0900
+Processing by MemosController#index as HTML
+  Rendering memos/index.html.erb within layouts/application
+  [1m[36mMemo Load (0.1ms)[0m  [1m[34mSELECT "memos".* FROM "memos"[0m
+  ↳ app/views/memos/index.html.erb:5
+  Rendered memos/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 40ms (Views: 38.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/new" for ::1 at 2020-12-02 21:49:33 +0900
+Processing by MemosController#new as HTML
+  Rendering memos/new.html.erb within layouts/application
+  Rendered memos/new.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 39ms (Views: 37.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-12-02 21:49:35 +0900
+Processing by MemosController#index as HTML
+  Rendering memos/index.html.erb within layouts/application
+  [1m[36mMemo Load (0.1ms)[0m  [1m[34mSELECT "memos".* FROM "memos"[0m
+  ↳ app/views/memos/index.html.erb:5
+  Rendered memos/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 44ms (Views: 42.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for ::1 at 2020-12-02 21:54:36 +0900
+Processing by MemosController#index as HTML
+  Rendering memos/index.html.erb within layouts/application
+  [1m[36mMemo Load (0.1ms)[0m  [1m[34mSELECT "memos".* FROM "memos"[0m
+  ↳ app/views/memos/index.html.erb:3
+  Rendered memos/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 45ms (Views: 42.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/new" for ::1 at 2020-12-02 21:54:39 +0900
+Processing by MemosController#new as HTML
+  Rendering memos/new.html.erb within layouts/application
+  Rendered memos/new.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 42ms (Views: 39.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-12-02 21:57:14 +0900
+Processing by MemosController#index as HTML
+  Rendering memos/index.html.erb within layouts/application
+  [1m[36mMemo Load (0.1ms)[0m  [1m[34mSELECT "memos".* FROM "memos"[0m
+  ↳ app/views/memos/index.html.erb:3
+  Rendered memos/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 48ms (Views: 45.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for ::1 at 2020-12-02 22:10:11 +0900
+Processing by MemosController#index as HTML
+  Rendering memos/index.html.erb within layouts/application
+  [1m[36mMemo Load (0.1ms)[0m  [1m[34mSELECT "memos".* FROM "memos"[0m
+  ↳ app/views/memos/index.html.erb:3
+  Rendered memos/index.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 44ms (Views: 41.0ms | ActiveRecord: 0.6ms)
+
+
+Started DELETE "/memos/1" for ::1 at 2020-12-02 22:10:18 +0900
+Processing by MemosController#destroy as HTML
+  Parameters: {"authenticity_token"=>"rOPK/tkU1d0SrE/HPSdcg9BhhzFXGanXZahx3tfdc11hcKDXFq4xhRpP9Am5tCrVulQdOwsqf01uUKsfATVMWw==", "id"=>"1"}
+  [1m[36mMemo Load (0.1ms)[0m  [1m[34mSELECT  "memos".* FROM "memos" WHERE "memos"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:18
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/application_controller.rb:19
+  [1m[36mMemo Destroy (0.3ms)[0m  [1m[31mDELETE FROM "memos" WHERE "memos"."id" = ?[0m  [["id", 1]]
+  ↳ app/controllers/application_controller.rb:19
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/application_controller.rb:19
+Redirected to http://localhost:3000/
+Completed 302 Found in 4ms (ActiveRecord: 1.2ms)
+
+
+Started GET "/" for ::1 at 2020-12-02 22:10:18 +0900
+Processing by MemosController#index as HTML
+  Rendering memos/index.html.erb within layouts/application
+  [1m[36mMemo Load (0.1ms)[0m  [1m[34mSELECT "memos".* FROM "memos"[0m
+  ↳ app/views/memos/index.html.erb:3
+  Rendered memos/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 45ms (Views: 43.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for ::1 at 2020-12-02 22:12:28 +0900
+Processing by MemosController#index as HTML
+  Rendering memos/index.html.erb within layouts/application
+  [1m[36mMemo Load (0.1ms)[0m  [1m[34mSELECT "memos".* FROM "memos"[0m
+  ↳ app/views/memos/index.html.erb:3
+  Rendered memos/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 40ms (Views: 38.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for ::1 at 2020-12-02 22:12:56 +0900
+Processing by MemosController#index as HTML
+  Rendering memos/index.html.erb within layouts/application
+  [1m[36mMemo Load (0.1ms)[0m  [1m[34mSELECT "memos".* FROM "memos"[0m
+  ↳ app/views/memos/index.html.erb:3
+  Rendered memos/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 43ms (Views: 41.6ms | ActiveRecord: 0.1ms)
+
+
+Started DELETE "/memos/2" for ::1 at 2020-12-02 22:13:54 +0900
+Processing by MemosController#destroy as HTML
+  Parameters: {"authenticity_token"=>"y0CtUBj+QcVW/F130bhCZHvJ5FhnGz+IPAmniiOsj80G08d510SlnV4f5rlVKzQyEfx+Ujso6RI38X1L9USwyw==", "id"=>"2"}
+  [1m[36mMemo Load (0.1ms)[0m  [1m[34mSELECT  "memos".* FROM "memos" WHERE "memos"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:18
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/application_controller.rb:19
+  [1m[36mMemo Destroy (0.3ms)[0m  [1m[31mDELETE FROM "memos" WHERE "memos"."id" = ?[0m  [["id", 2]]
+  ↳ app/controllers/application_controller.rb:19
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/application_controller.rb:19
+Redirected to http://localhost:3000/
+Completed 302 Found in 3ms (ActiveRecord: 1.1ms)
+
+
+Started GET "/" for ::1 at 2020-12-02 22:13:54 +0900
+Processing by MemosController#index as HTML
+  Rendering memos/index.html.erb within layouts/application
+  [1m[36mMemo Load (0.1ms)[0m  [1m[34mSELECT "memos".* FROM "memos"[0m
+  ↳ app/views/memos/index.html.erb:3
+  Rendered memos/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 39ms (Views: 36.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/new" for ::1 at 2020-12-02 22:13:55 +0900
+Processing by MemosController#new as HTML
+  Rendering memos/new.html.erb within layouts/application
+  Rendered memos/new.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 46ms (Views: 43.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/create" for ::1 at 2020-12-02 22:14:09 +0900
+Processing by MemosController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ViXJ2Cb02R5zn8H3J2wa7hvTeqQwdzZ/RusyNdGnhgqk+k/11HgmTjpESRRYcf4tboLUgNowAs9xh8vaqhAX/w==", "memos"=>{"title"=>"AWS学習", "body"=>""}, "commit"=>"Create"}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/application_controller.rb:13
+  [1m[36mMemo Create (0.3ms)[0m  [1m[32mINSERT INTO "memos" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "AWS学習"], ["body", ""], ["created_at", "2020-12-02 13:14:09.177604"], ["updated_at", "2020-12-02 13:14:09.177604"]]
+  ↳ app/controllers/application_controller.rb:13
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/application_controller.rb:13
+Redirected to http://localhost:3000/
+Completed 302 Found in 3ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/" for ::1 at 2020-12-02 22:14:09 +0900
+Processing by MemosController#index as HTML
+  Rendering memos/index.html.erb within layouts/application
+  [1m[36mMemo Load (0.1ms)[0m  [1m[34mSELECT "memos".* FROM "memos"[0m
+  ↳ app/views/memos/index.html.erb:3
+  Rendered memos/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 40ms (Views: 37.5ms | ActiveRecord: 0.1ms)
+
+
+Started DELETE "/memos/3" for ::1 at 2020-12-02 22:14:11 +0900
+Processing by MemosController#destroy as HTML
+  Parameters: {"authenticity_token"=>"QUmi5EQiG/b9wu604IWWoYKgslHqvB/xDdFbg9RHMPCM2sjNi5j/rvUhVXpkFuD36JUoW7aPyWsGKYFCAq8P9g==", "id"=>"3"}
+  [1m[36mMemo Load (0.1ms)[0m  [1m[34mSELECT  "memos".* FROM "memos" WHERE "memos"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:18
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/application_controller.rb:19
+  [1m[36mMemo Destroy (0.3ms)[0m  [1m[31mDELETE FROM "memos" WHERE "memos"."id" = ?[0m  [["id", 3]]
+  ↳ app/controllers/application_controller.rb:19
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/application_controller.rb:19
+Redirected to http://localhost:3000/
+Completed 302 Found in 3ms (ActiveRecord: 1.3ms)
+
+
+Started GET "/" for ::1 at 2020-12-02 22:14:11 +0900
+Processing by MemosController#index as HTML
+  Rendering memos/index.html.erb within layouts/application
+  [1m[36mMemo Load (0.1ms)[0m  [1m[34mSELECT "memos".* FROM "memos"[0m
+  ↳ app/views/memos/index.html.erb:3
+  Rendered memos/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 44ms (Views: 41.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/new" for ::1 at 2020-12-02 22:14:12 +0900
+Processing by MemosController#new as HTML
+  Rendering memos/new.html.erb within layouts/application
+  Rendered memos/new.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 42ms (Views: 40.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/new" for ::1 at 2020-12-02 22:17:01 +0900
+Processing by MemosController#new as HTML
+  Rendering memos/new.html.erb within layouts/application
+  Rendered memos/new.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 44ms (Views: 42.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-12-02 22:17:05 +0900
+Processing by MemosController#index as HTML
+  Rendering memos/index.html.erb within layouts/application
+  [1m[36mMemo Load (0.1ms)[0m  [1m[34mSELECT "memos".* FROM "memos"[0m
+  ↳ app/views/memos/index.html.erb:3
+  Rendered memos/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 39ms (Views: 36.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for ::1 at 2020-12-02 22:17:33 +0900
+Processing by MemosController#index as HTML
+  Rendering memos/index.html.erb within layouts/application
+  [1m[36mMemo Load (0.1ms)[0m  [1m[34mSELECT "memos".* FROM "memos"[0m
+  ↳ app/views/memos/index.html.erb:3
+  Rendered memos/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 47ms (Views: 45.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/new" for ::1 at 2020-12-02 22:17:35 +0900
+Processing by MemosController#new as HTML
+  Rendering memos/new.html.erb within layouts/application
+  Rendered memos/new.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 58ms (Views: 56.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/create" for ::1 at 2020-12-02 22:17:40 +0900
+Processing by MemosController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"MAwN1QUARQzx8/JxvY0uiUzCvYRB2bTHIJEBqraeMCLC04v494y6XLgoepLCkMpKOZMToKuegHcX/fhFzSmh1w==", "memos"=>{"title"=>"AWS学習", "body"=>"ClaudFormationの見直し"}, "commit"=>"Create"}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/application_controller.rb:13
+  [1m[36mMemo Create (0.3ms)[0m  [1m[32mINSERT INTO "memos" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "AWS学習"], ["body", "ClaudFormationの見直し"], ["created_at", "2020-12-02 13:17:40.023894"], ["updated_at", "2020-12-02 13:17:40.023894"]]
+  ↳ app/controllers/application_controller.rb:13
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/application_controller.rb:13
+Redirected to http://localhost:3000/
+Completed 302 Found in 3ms (ActiveRecord: 0.9ms)
+
+
+Started GET "/" for ::1 at 2020-12-02 22:17:40 +0900
+Processing by MemosController#index as HTML
+  Rendering memos/index.html.erb within layouts/application
+  [1m[36mMemo Load (0.1ms)[0m  [1m[34mSELECT "memos".* FROM "memos"[0m
+  ↳ app/views/memos/index.html.erb:3
+  Rendered memos/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 57ms (Views: 54.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for ::1 at 2020-12-02 22:18:04 +0900
+Processing by MemosController#index as HTML
+  Rendering memos/index.html.erb within layouts/application
+  [1m[36mMemo Load (0.1ms)[0m  [1m[34mSELECT "memos".* FROM "memos"[0m
+  ↳ app/views/memos/index.html.erb:3
+  Rendered memos/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 40ms (Views: 38.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/new" for ::1 at 2020-12-02 22:19:13 +0900
+Processing by MemosController#new as HTML
+  Rendering memos/new.html.erb within layouts/application
+  Rendered memos/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 46ms (Views: 43.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-12-02 22:19:18 +0900
+Processing by MemosController#index as HTML
+  Rendering memos/index.html.erb within layouts/application
+  [1m[36mMemo Load (0.1ms)[0m  [1m[34mSELECT "memos".* FROM "memos"[0m
+  ↳ app/views/memos/index.html.erb:3
+  Rendered memos/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 48ms (Views: 45.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for ::1 at 2020-12-02 22:20:47 +0900
+Processing by MemosController#index as HTML
+  Rendering memos/index.html.erb within layouts/application
+  [1m[36mMemo Load (0.1ms)[0m  [1m[34mSELECT "memos".* FROM "memos"[0m
+  ↳ app/views/memos/index.html.erb:3
+  Rendered memos/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 39ms (Views: 37.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/new" for ::1 at 2020-12-02 22:23:14 +0900
+Processing by MemosController#new as HTML
+  Rendering memos/new.html.erb within layouts/application
+  Rendered memos/new.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 43ms (Views: 40.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-12-02 22:23:18 +0900
+Processing by MemosController#index as HTML
+  Rendering memos/index.html.erb within layouts/application
+  [1m[36mMemo Load (0.1ms)[0m  [1m[34mSELECT "memos".* FROM "memos"[0m
+  ↳ app/views/memos/index.html.erb:3
+  Rendered memos/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 39ms (Views: 37.0ms | ActiveRecord: 0.1ms)
+
+
+Started DELETE "/memos/4" for ::1 at 2020-12-02 22:23:53 +0900
+Processing by MemosController#destroy as HTML
+  Parameters: {"authenticity_token"=>"2TpF7e9qO36GzrudXUYGjSm3XuHQKGaYznoK52xfqfkUqS/EINDfJo4tAFPZ1XDbQ4LE64wbsALFgtAmureW/w==", "id"=>"4"}
+  [1m[36mMemo Load (0.1ms)[0m  [1m[34mSELECT  "memos".* FROM "memos" WHERE "memos"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:18
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/application_controller.rb:19
+  [1m[36mMemo Destroy (0.2ms)[0m  [1m[31mDELETE FROM "memos" WHERE "memos"."id" = ?[0m  [["id", 4]]
+  ↳ app/controllers/application_controller.rb:19
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/application_controller.rb:19
+Redirected to http://localhost:3000/
+Completed 302 Found in 3ms (ActiveRecord: 1.2ms)
+
+
+Started GET "/" for ::1 at 2020-12-02 22:23:53 +0900
+Processing by MemosController#index as HTML
+  Rendering memos/index.html.erb within layouts/application
+  [1m[36mMemo Load (0.1ms)[0m  [1m[34mSELECT "memos".* FROM "memos"[0m
+  ↳ app/views/memos/index.html.erb:3
+  Rendered memos/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 41ms (Views: 38.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/new" for ::1 at 2020-12-02 22:23:54 +0900
+Processing by MemosController#new as HTML
+  Rendering memos/new.html.erb within layouts/application
+  Rendered memos/new.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 43ms (Views: 41.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/create" for ::1 at 2020-12-02 22:24:41 +0900
+Processing by MemosController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"U2u51NAKVZcUQYTJlAH8favU3mNPy7itLMRl4sA2asKhtD/5Ioaqx12aDCrrHBi+3oVwR6WMjB0bqJwNu4H7Nw==", "memos"=>{"title"=>"AWS学習", "body"=>"CloudFormation作成。"}, "commit"=>"Create"}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/application_controller.rb:13
+  [1m[36mMemo Create (0.3ms)[0m  [1m[32mINSERT INTO "memos" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "AWS学習"], ["body", "CloudFormation作成。"], ["created_at", "2020-12-02 13:24:41.054645"], ["updated_at", "2020-12-02 13:24:41.054645"]]
+  ↳ app/controllers/application_controller.rb:13
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/application_controller.rb:13
+Redirected to http://localhost:3000/
+Completed 302 Found in 2ms (ActiveRecord: 0.8ms)
+
+
+Started GET "/" for ::1 at 2020-12-02 22:24:41 +0900
+Processing by MemosController#index as HTML
+  Rendering memos/index.html.erb within layouts/application
+  [1m[36mMemo Load (0.1ms)[0m  [1m[34mSELECT "memos".* FROM "memos"[0m
+  ↳ app/views/memos/index.html.erb:3
+  Rendered memos/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 40ms (Views: 38.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/new" for ::1 at 2020-12-02 22:24:44 +0900
+Processing by MemosController#new as HTML
+  Rendering memos/new.html.erb within layouts/application
+  Rendered memos/new.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 46ms (Views: 44.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/create" for ::1 at 2020-12-02 22:25:13 +0900
+Processing by MemosController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ZDMbDfzbNL1RPlxg40sWTr4raZpszRkQs5hDAdA29yGW7J0gDlfL7Rjl1IOcVvKNy3rHvoaKLaCE9Lruq4Fm1A==", "memos"=>{"title"=>"Linux学習", "body"=>"ubuntuでコマンド学習。"}, "commit"=>"Create"}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/application_controller.rb:13
+  [1m[36mMemo Create (0.3ms)[0m  [1m[32mINSERT INTO "memos" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Linux学習"], ["body", "ubuntuでコマンド学習。"], ["created_at", "2020-12-02 13:25:13.763472"], ["updated_at", "2020-12-02 13:25:13.763472"]]
+  ↳ app/controllers/application_controller.rb:13
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/application_controller.rb:13
+Redirected to http://localhost:3000/
+Completed 302 Found in 2ms (ActiveRecord: 0.8ms)
+
+
+Started GET "/" for ::1 at 2020-12-02 22:25:13 +0900
+Processing by MemosController#index as HTML
+  Rendering memos/index.html.erb within layouts/application
+  [1m[36mMemo Load (0.1ms)[0m  [1m[34mSELECT "memos".* FROM "memos"[0m
+  ↳ app/views/memos/index.html.erb:3
+  Rendered memos/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 39ms (Views: 37.5ms | ActiveRecord: 0.1ms)
+
+
+Started DELETE "/memos/5" for ::1 at 2020-12-02 22:25:19 +0900
+Processing by MemosController#destroy as HTML
+  Parameters: {"authenticity_token"=>"JFb70JmBQmBKoz0Wx5RtBvbVxQZ6RVARzLGzt2UVfR/pxZH5VjumOEJAhthDBxtQnOBfDCZ2hovHSWl2s/1CGQ==", "id"=>"5"}
+  [1m[36mMemo Load (0.1ms)[0m  [1m[34mSELECT  "memos".* FROM "memos" WHERE "memos"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:18
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/application_controller.rb:19
+  [1m[36mMemo Destroy (0.3ms)[0m  [1m[31mDELETE FROM "memos" WHERE "memos"."id" = ?[0m  [["id", 5]]
+  ↳ app/controllers/application_controller.rb:19
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/application_controller.rb:19
+Redirected to http://localhost:3000/
+Completed 302 Found in 3ms (ActiveRecord: 1.3ms)
+
+
+Started GET "/" for ::1 at 2020-12-02 22:25:19 +0900
+Processing by MemosController#index as HTML
+  Rendering memos/index.html.erb within layouts/application
+  [1m[36mMemo Load (0.1ms)[0m  [1m[34mSELECT "memos".* FROM "memos"[0m
+  ↳ app/views/memos/index.html.erb:3
+  Rendered memos/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 40ms (Views: 37.8ms | ActiveRecord: 0.1ms)
+
+
+Started DELETE "/memos/6" for ::1 at 2020-12-02 22:25:21 +0900
+Processing by MemosController#destroy as HTML
+  Parameters: {"authenticity_token"=>"84n+/gUoWFzMhUvkpSQo6IsIMkkU5P9lLkRzoQdv+n4+GpTXypK8BMRm8Coht16+4T2oQ0jXKf8lvKlg0YfFeA==", "id"=>"6"}
+  [1m[36mMemo Load (0.1ms)[0m  [1m[34mSELECT  "memos".* FROM "memos" WHERE "memos"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:18
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/application_controller.rb:19
+  [1m[36mMemo Destroy (0.3ms)[0m  [1m[31mDELETE FROM "memos" WHERE "memos"."id" = ?[0m  [["id", 6]]
+  ↳ app/controllers/application_controller.rb:19
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/application_controller.rb:19
+Redirected to http://localhost:3000/
+Completed 302 Found in 3ms (ActiveRecord: 1.3ms)
+
+
+Started GET "/" for ::1 at 2020-12-02 22:25:21 +0900
+Processing by MemosController#index as HTML
+  Rendering memos/index.html.erb within layouts/application
+  [1m[36mMemo Load (0.1ms)[0m  [1m[34mSELECT "memos".* FROM "memos"[0m
+  ↳ app/views/memos/index.html.erb:3
+  Rendered memos/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 43ms (Views: 41.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/new" for ::1 at 2020-12-02 22:25:24 +0900
+Processing by MemosController#new as HTML
+  Rendering memos/new.html.erb within layouts/application
+  Rendered memos/new.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 42ms (Views: 40.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/create" for ::1 at 2020-12-02 22:27:06 +0900
+Processing by MemosController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"I//lbB1/4a4pc22J4egU7Z9d90pvJQwycn38MO4yrFfRIGNB7/Me/mCo5Wqe9fAu6gxZboViOIJFEQXflYU9og==", "memos"=>{"title"=>"AWS", "body"=>"CloudFormationでVPC、EC2作成。"}, "commit"=>"Create"}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/application_controller.rb:13
+  [1m[36mMemo Create (0.3ms)[0m  [1m[32mINSERT INTO "memos" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "AWS"], ["body", "CloudFormationでVPC、EC2作成。"], ["created_at", "2020-12-02 13:27:06.131305"], ["updated_at", "2020-12-02 13:27:06.131305"]]
+  ↳ app/controllers/application_controller.rb:13
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/application_controller.rb:13
+Redirected to http://localhost:3000/
+Completed 302 Found in 2ms (ActiveRecord: 0.9ms)
+
+
+Started GET "/" for ::1 at 2020-12-02 22:27:06 +0900
+Processing by MemosController#index as HTML
+  Rendering memos/index.html.erb within layouts/application
+  [1m[36mMemo Load (0.1ms)[0m  [1m[34mSELECT "memos".* FROM "memos"[0m
+  ↳ app/views/memos/index.html.erb:3
+  Rendered memos/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 45ms (Views: 42.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for ::1 at 2020-12-02 22:27:56 +0900
+Processing by MemosController#index as HTML
+  Rendering memos/index.html.erb within layouts/application
+  [1m[36mMemo Load (0.1ms)[0m  [1m[34mSELECT "memos".* FROM "memos"[0m
+  ↳ app/views/memos/index.html.erb:3
+  Rendered memos/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 40ms (Views: 38.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for ::1 at 2020-12-02 22:33:20 +0900
+Processing by MemosController#index as HTML
+  Rendering memos/index.html.erb within layouts/application
+  [1m[36mMemo Load (0.2ms)[0m  [1m[34mSELECT "memos".* FROM "memos"[0m
+  ↳ app/views/memos/index.html.erb:3
+  Rendered memos/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 46ms (Views: 43.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/new" for ::1 at 2020-12-02 22:33:41 +0900
+Processing by MemosController#new as HTML
+  Rendering memos/new.html.erb within layouts/application
+  Rendered memos/new.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 40ms (Views: 38.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/create" for ::1 at 2020-12-02 22:33:53 +0900
+Processing by MemosController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"fGOf2rWEdXQx0tN8QKAs5wlYnAMSRnJWlYL57sSkfOeOvBn3RwiKJHgJW58/vcgkfAkyJ/gBRuai7gABvxPtEg==", "memos"=>{"title"=>"Linux", "body"=>"ubuntuでコマンド学習。"}, "commit"=>"Create"}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/application_controller.rb:13
+  [1m[36mMemo Create (0.3ms)[0m  [1m[32mINSERT INTO "memos" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Linux"], ["body", "ubuntuでコマンド学習。"], ["created_at", "2020-12-02 13:33:53.744898"], ["updated_at", "2020-12-02 13:33:53.744898"]]
+  ↳ app/controllers/application_controller.rb:13
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/application_controller.rb:13
+Redirected to http://localhost:3000/
+Completed 302 Found in 2ms (ActiveRecord: 0.8ms)
+
+
+Started GET "/" for ::1 at 2020-12-02 22:33:53 +0900
+Processing by MemosController#index as HTML
+  Rendering memos/index.html.erb within layouts/application
+  [1m[36mMemo Load (0.1ms)[0m  [1m[34mSELECT "memos".* FROM "memos"[0m
+  ↳ app/views/memos/index.html.erb:3
+  Rendered memos/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 39ms (Views: 37.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/new" for ::1 at 2020-12-02 22:33:56 +0900
+Processing by MemosController#new as HTML
+  Rendering memos/new.html.erb within layouts/application
+  Rendered memos/new.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 47ms (Views: 44.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/create" for ::1 at 2020-12-02 22:34:37 +0900
+Processing by MemosController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"wj6lRpxsvjBxfcKs19kKxnf+oz7G+3YYhaslLpArgI0w4SNrbuBBYDimSk+oxO4FAq8NGiy8Qqiyx9zB65wReA==", "memos"=>{"title"=>"Terraform", "body"=>"CloudFormationと同じ内容を作成する。"}, "commit"=>"Create"}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/application_controller.rb:13
+  [1m[36mMemo Create (0.3ms)[0m  [1m[32mINSERT INTO "memos" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Terraform"], ["body", "CloudFormationと同じ内容を作成する。"], ["created_at", "2020-12-02 13:34:37.971345"], ["updated_at", "2020-12-02 13:34:37.971345"]]
+  ↳ app/controllers/application_controller.rb:13
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/application_controller.rb:13
+Redirected to http://localhost:3000/
+Completed 302 Found in 3ms (ActiveRecord: 0.8ms)
+
+
+Started GET "/" for ::1 at 2020-12-02 22:34:37 +0900
+Processing by MemosController#index as HTML
+  Rendering memos/index.html.erb within layouts/application
+  [1m[36mMemo Load (0.1ms)[0m  [1m[34mSELECT "memos".* FROM "memos"[0m
+  ↳ app/views/memos/index.html.erb:3
+  Rendered memos/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 39ms (Views: 37.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/new" for ::1 at 2020-12-02 22:35:01 +0900
+Processing by MemosController#new as HTML
+  Rendering memos/new.html.erb within layouts/application
+  Rendered memos/new.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 45ms (Views: 43.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-12-02 22:35:15 +0900
+Processing by MemosController#index as HTML
+  Rendering memos/index.html.erb within layouts/application
+  [1m[36mMemo Load (0.1ms)[0m  [1m[34mSELECT "memos".* FROM "memos"[0m
+  ↳ app/views/memos/index.html.erb:3
+  Rendered memos/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 44ms (Views: 41.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for ::1 at 2020-12-02 22:45:49 +0900
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/hs/.rbenv/versions/2.5.8/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+Processing by MemosController#index as HTML
+  Rendering memos/index.html.erb within layouts/application
+  [1m[36mMemo Load (0.2ms)[0m  [1m[34mSELECT "memos".* FROM "memos"[0m
+  ↳ app/views/memos/index.html.erb:3
+  Rendered memos/index.html.erb within layouts/application (8.3ms)
+Completed 200 OK in 224ms (Views: 217.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2020-12-04 22:04:38 +0900
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/hs/.rbenv/versions/2.5.8/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+Processing by MemosController#index as HTML
+  Rendering memos/index.html.erb within layouts/application
+  [1m[36mMemo Load (0.4ms)[0m  [1m[34mSELECT "memos".* FROM "memos"[0m
+  ↳ app/views/memos/index.html.erb:3
+  Rendered memos/index.html.erb within layouts/application (6.9ms)
+Completed 200 OK in 309ms (Views: 300.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/new" for ::1 at 2020-12-04 22:04:42 +0900
+Processing by MemosController#new as HTML
+  Rendering memos/new.html.erb within layouts/application
+  Rendered memos/new.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 63ms (Views: 60.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-12-04 22:04:43 +0900
+Processing by MemosController#index as HTML
+  Rendering memos/index.html.erb within layouts/application
+  [1m[36mMemo Load (0.1ms)[0m  [1m[34mSELECT "memos".* FROM "memos"[0m
+  ↳ app/views/memos/index.html.erb:3
+  Rendered memos/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 47ms (Views: 44.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for ::1 at 2020-12-04 23:52:29 +0900
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/hs/.rbenv/versions/2.5.8/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+Processing by MemosController#index as HTML
+  Rendering memos/index.html.erb within layouts/application
+  [1m[36mMemo Load (0.2ms)[0m  [1m[34mSELECT "memos".* FROM "memos"[0m
+  ↳ app/views/memos/index.html.erb:3
+  Rendered memos/index.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 214ms (Views: 207.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 172.21.0.1 at 2021-09-12 14:58:47 +0000
+Cannot render console from 172.21.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+Processing by MemosController#index as HTML
+  Rendering memos/index.html.erb within layouts/application
+  [1m[36mMemo Load (2.0ms)[0m  [1m[34mSELECT "memos".* FROM "memos"[0m
+  ↳ app/views/memos/index.html.erb:3
+  Rendered memos/index.html.erb within layouts/application (14.9ms)
+Completed 200 OK in 5576ms (Views: 5515.9ms | ActiveRecord: 8.2ms)
+
+
+Started GET "/new" for 172.21.0.1 at 2021-09-12 14:59:00 +0000
+Cannot render console from 172.21.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MemosController#new as HTML
+  Rendering memos/new.html.erb within layouts/application
+  Rendered memos/new.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 204ms (Views: 182.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/new" for 172.21.0.1 at 2021-09-12 14:59:02 +0000
+Cannot render console from 172.21.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MemosController#new as HTML
+  Rendering memos/new.html.erb within layouts/application
+  Rendered memos/new.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 203ms (Views: 183.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/new" for 172.21.0.1 at 2021-09-12 14:59:06 +0000
+Cannot render console from 172.21.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MemosController#new as HTML
+  Rendering memos/new.html.erb within layouts/application
+  Rendered memos/new.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 197ms (Views: 175.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/create" for 172.21.0.1 at 2021-09-12 14:59:16 +0000
+Cannot render console from 172.21.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MemosController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7Pdioe609OXi373nWtkK+DEpYI58vhUU0wp2/oKb0781vyHwJhDsrjAPTz/C+RVJO5jKLVWDliXZ1RcE4RwkNw==", "memos"=>{"title"=>"AWS学習", "body"=>"ClaudFormationの見直し"}, "commit"=>"Create"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/application_controller.rb:13
+  [1m[36mMemo Create (9.7ms)[0m  [1m[32mINSERT INTO "memos" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "AWS学習"], ["body", "ClaudFormationの見直し"], ["created_at", "2021-09-12 14:59:16.339889"], ["updated_at", "2021-09-12 14:59:16.339889"]]
+  ↳ app/controllers/application_controller.rb:13
+  [1m[35m (7.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/application_controller.rb:13
+Redirected to http://localhost:3000/
+Completed 302 Found in 26ms (ActiveRecord: 17.2ms)
+
+
+Started GET "/" for 172.21.0.1 at 2021-09-12 14:59:16 +0000
+Cannot render console from 172.21.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MemosController#index as HTML
+  Rendering memos/index.html.erb within layouts/application
+  [1m[36mMemo Load (2.3ms)[0m  [1m[34mSELECT "memos".* FROM "memos"[0m
+  ↳ app/views/memos/index.html.erb:3
+  Rendered memos/index.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 205ms (Views: 186.9ms | ActiveRecord: 2.3ms)
+
+
+Started DELETE "/memos/10" for 172.21.0.1 at 2021-09-12 15:00:07 +0000
+Cannot render console from 172.21.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MemosController#destroy as HTML
+  Parameters: {"authenticity_token"=>"uvFc+6XlUyCPBQ84CFQM8TgZZ1hYF4lJV6oeaSQXCQxmLaLquJAcXOaHWow8qcRlhA+eLTvsOKUDQmbuI3OIWQ==", "id"=>"10"}
+  [1m[36mMemo Load (1.7ms)[0m  [1m[34mSELECT  "memos".* FROM "memos" WHERE "memos"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:18
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/application_controller.rb:19
+  [1m[36mMemo Destroy (6.9ms)[0m  [1m[31mDELETE FROM "memos" WHERE "memos"."id" = ?[0m  [["id", 10]]
+  ↳ app/controllers/application_controller.rb:19
+  [1m[35m (4.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/application_controller.rb:19
+Redirected to http://localhost:3000/
+Completed 302 Found in 30ms (ActiveRecord: 13.4ms)
+
+
+Started GET "/" for 172.21.0.1 at 2021-09-12 15:00:07 +0000
+Cannot render console from 172.21.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MemosController#index as HTML
+  Rendering memos/index.html.erb within layouts/application
+  [1m[36mMemo Load (2.4ms)[0m  [1m[34mSELECT "memos".* FROM "memos"[0m
+  ↳ app/views/memos/index.html.erb:3
+  Rendered memos/index.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 202ms (Views: 181.0ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/" for 172.21.0.1 at 2021-09-12 15:01:32 +0000
+Cannot render console from 172.21.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+Processing by MemosController#index as HTML
+  Rendering memos/index.html.erb within layouts/application
+  [1m[36mMemo Load (1.5ms)[0m  [1m[34mSELECT "memos".* FROM "memos"[0m
+  ↳ app/views/memos/index.html.erb:3
+  Rendered memos/index.html.erb within layouts/application (13.2ms)
+Completed 200 OK in 930ms (Views: 878.3ms | ActiveRecord: 7.4ms)
+
+

@@ -1,0 +1,12 @@
+<h3>Learning Memo</h3>
+
+<% @memos.each do |memo| %>
+<div class="col-sm-6">
+    <div class="panel panel-success">
+        <div class="panel-heading"><%= memo.title%>     <a href="/memos/<%=memo.id%>" data-method="delete">Delete Memo</a></div>
+        <div class="panel-body">
+        <%= memo.body%>
+        </div>
+    </div>
+</div>
+<% end %>
