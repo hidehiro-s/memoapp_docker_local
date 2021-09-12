@@ -4,8 +4,8 @@ Docker自己学習。
 memoアプリをDocker上で起動する（ローカル環境）  
 
 Docker version 20.10.8  
-Ruby Version 2.5.8　　
-Rails Version 2.5.4　　
+Ruby Version 2.5.8  
+Rails Version 2.5.4  
 
 # コマンドメモ  
 $ mkdir memo_docker  
